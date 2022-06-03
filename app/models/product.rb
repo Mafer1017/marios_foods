@@ -8,6 +8,6 @@ class Product < ApplicationRecord
  private
    def titleize_product
      self.name = self.name.titleize
-     self.country_of_origin = self.country_of_origin.titleize
+     self.country = self.country.titleize
    end
 end

@@ -3,7 +3,7 @@ class CreateProducts < ActiveRecord::Migration[6.1]
     create_table :products do |t|
       t.column(:name, :string)
       t.column(:cost, :integer)
-      t.column(:country_of_origin, :string)
+      t.column(:country, :string)
       
       t.timestamps
     end
