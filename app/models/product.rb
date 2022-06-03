@@ -7,6 +7,7 @@ class Product < ApplicationRecord
     .order("reviews_count DESC")
     .limit(1)
     )}
+    scope :local, -> { where(country: "United States") }
   has_many :reviews, dependent: :delete_all
   validates :name, presence: true
   validates :cost, presence: true
