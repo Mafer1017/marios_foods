@@ -1,6 +1,8 @@
 class Product < ApplicationRecord
   has_many :reviews
   validates :name, presence: true
+  validates :cost, presence: true
+  validates :country, presence: true
   validates_length_of :name, maximum: 25
 
   before_save(:titleize_product)
