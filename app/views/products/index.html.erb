@@ -22,4 +22,16 @@
 <% end %>
 
 
+<% if @products_most_reviews.any? %>
+  <ul>
+    <% @products_most_reviews.each do |most_recent| %>
+
+      <li><%= link_to most_recent.name, product_path(most_recent) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no product reviews yet.</p>
+<% end %>
+
+
 <p><%= link_to "Create new product", new_product_path %></p>
