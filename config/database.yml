@@ -24,7 +24,7 @@ default: &default
 development:
   <<: *default
   database: marios_foods_development
-  password: <%= ENV['POSTGRES_PASSWORD'] %>
+  password: dog
   host: localhost
 
   # The specified database role being used to connect to postgres.
@@ -60,7 +60,7 @@ development:
 test:
   <<: *default
   database: marios_foods_test
-  password: <%= ENV['POSTGRES_PASSWORD'] %>
+  password: dog
   host: localhost
 
 # As with config/credentials.yml, you never want to store sensitive information,
@@ -87,5 +87,5 @@ production:
   <<: *default
   database: marios_foods_production
   username: marios_foods
-  password: <%= ENV['MARIOS_FOODS_DATABASE_PASSWORD'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
   host: localhost
