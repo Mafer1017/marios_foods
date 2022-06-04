@@ -27,7 +27,7 @@ _This project allows users to input food products and add reviews for each produ
     `rake db:create`  
 * In a separate terminal window, run:
     `rails s`
-*open your browser and nagivate to `http://localhost:3000/`
+* open your browser and nagivate to `http://localhost:3000/`
 
 
 ## Known Bugs
