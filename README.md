@@ -25,6 +25,12 @@ _This project allows users to input food products and add reviews for each produ
 * In the main project directory, enter `bundle install` in the terminal to include necessary gems.
 * Create the necessary databases on your device using postgres by inputting the following command in the terminal:
     `rake db:create`  
+* Migrate the database by running:
+    `rake db:migrate` 
+* Create the testing database by inputting the following command in the terminal:
+    `rake db:test:prepare` 
+* Seed the database by running:
+    `rake db:seed` 
 * In a separate terminal window, run:
     `rails s`
 * open your browser and nagivate to `http://localhost:3000/`
