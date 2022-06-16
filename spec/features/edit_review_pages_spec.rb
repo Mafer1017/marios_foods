@@ -13,7 +13,7 @@ describe "the edit review process" do
   it "returns error when author left blank" do
     product = Product.create(:name => 'Hamburger', :cost => '10', :country => 'United States')
     review = Review.create(:author => 'Greg', :content_body => "This burger was the best burger I have ever eaten. It is amazing!", :rating => '2', :product_id => product.id)
-    visit edit_product_review_path (product, review)
+    visit edit_product_review_path(product, review)
     fill_in 'Author', :with => ''
     click_on 'Update Review'
     expect(page).to have_content 'error'
