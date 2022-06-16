@@ -11,41 +11,4 @@
   <p>There are no products yet.</p>
 <% end %>
 
-<h3> Most recently added products: </h3>
-<% if @products_most_recent.any? %>
-  <ul>
-    <% @products_most_recent.each do |most_reviewed| %>
-
-      <li><%= link_to most_reviewed.name, product_path(most_reviewed) %></li>
-    <% end %>
-  </ul>
-<% else %>
-  <p>There are no products yet.</p>
-<% end %>
-
-
-<h3>Most reviewed Product: </h3>
-<% if @products_most_reviews.any? %>
-  <ul>
-    <% @products_most_reviews.each do |most_recent| %>
-
-      <li><%= link_to most_recent.name, product_path(most_recent) %></li>
-    <% end %>
-  </ul>
-<% else %>
-  <p>There are no product reviews yet.</p>
-<% end %>
-
-<h3> LOCALLY MADE IN THE USA: </H3>
-<% if @products_local.any? %>
-  <ul>
-    <% @products_local.each do |local| %>
-
-      <li><%= link_to local.name, product_path(local) %></li>
-    <% end %>
-  </ul>
-<% else %>
-  <p>There are currently no products made in the United States.</p>
-<% end %>
-
 <p><%= link_to "Create new product", new_product_path %></p>

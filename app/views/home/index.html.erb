@@ -1,5 +1,5 @@
 <h1> Welcome to Mario's Foods!</h1>
-
+<p> beginning in 1985, Mario has been selling foods from all over the world on his online databse. From apples to Zucchinis, Mario has it for you.</p>
 
 
 <h3> Most recently added products: </h3>
@@ -38,5 +38,7 @@
 <% else %>
   <p>There are currently no products made in the United States.</p>
 <% end %>
+
+<p><%= link_to "View all products", products_path %></p>
 
 <p><%= link_to "Create new product", new_product_path %></p>
