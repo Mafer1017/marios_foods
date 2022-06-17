@@ -1,3 +1,12 @@
+<% if user_signed_in? %>
+  <p><%= link_to "Logout", destroy_user_session_path, :method => :delete %>
+<% else %>
+  <p>You are not signed in.</p>
+  <%= link_to "Sign up!", new_user_registration_path %>
+  <br/>
+  <%= link_to "Login", new_user_session_path %>
+<% end %>
+
 <h1> Welcome to Mario's Foods!</h1>
 <p> beginning in 1985, Mario has been selling foods from all over the world on his online database. From apples to Zucchinis, Mario has it for you.</p>
 
@@ -42,3 +51,4 @@
 <p><%= link_to "View all products", products_path %></p>
 
 <p><%= link_to "Create new product", new_product_path %></p>
+
