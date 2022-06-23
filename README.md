@@ -37,7 +37,7 @@ _This project allows users to input food products and add reviews for each produ
 * Create an account by clicking the Sign Up link in the top of the homepage and enter the required details.
 * Open the rails console by entering the command `rails c` in your terminal
 * Navigate to the account you created by inputting ` user = User.where(email: "YOUR EMAIL HERE")` command
-* Change user status to admin by entering the command `user.update(admin: true)'
+* Change user status to admin by entering the command `user.update(admin: true)`
 
 
 ## Known Bugs
